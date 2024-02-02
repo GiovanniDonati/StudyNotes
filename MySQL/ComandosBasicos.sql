@@ -1,0 +1,32 @@
+--Criar a tabela do SQL
+CREATE TABLE CLIENTES (
+    ID INT PRIMARY KEY AUTO_INCREMENT, -->AUTO_INCREMENT CRIA O ID NUMERICAMENTE.
+    NOME VARCHAR(60) NOT NULL, --> VARCHAR É VARIAVEL, ONDE O NÚMERO VARIA.
+    CPF CHAR(11) NOT NULL, --> CHAR É ESTÁTICO, ONDE O NÚMERO NÃO VARIA.
+    EMAIL VARCHAR(80) NOT NULL,
+    DATANASCIMENTO DATE NOT NULL, --> PARA APENAS DATA // DATATIME: PARA DATA E HORA.
+    ATIVO BIT NOT NULL, --> BIT É BASICAMENTE OPERADOR LÓGICO.
+    ALTURA FLOAT NOT NULL, --> FLOAT É UM NÚMERO QUEBRADO.
+)
+
+-- Inserir dados
+INSERT INTO CLIENTES (NOME,CPF,EMAIL) VALUES
+    ('Pedro Costa','09090909099','Pedro@gmail.com','06-08-1999','true', '1,5')
+
+INSERT INTO CLIENTES (NOME,CPF,EMAIL) VALUES
+    ('Marcelo Costa','123456789123','marcelo@gmail.com')
+
+--Editar dados
+UPDATE CLIENTES SET EMAIL = 'marcelo@hotmail.com'
+WHERE ID = 2
+
+UPDATE CLIENTES SET NAME = 'Pedro Gilberto Costa', 
+                    CPF = '40028922000',
+                    EMAIL = 'pedro@hotmail.com',
+WHERE ID = 1
+
+--Excluir dados
+DELETE FROM CLIENTES WHERE ID = 1 --Pode ser usado o CPF, nome, email, mesma sintaxe.
+
+--Excluir tabela
+DROP TABLE CLIENTES
