@@ -4,11 +4,11 @@
     <code>var test: String</code>
 * *Fun* é a palavra reservada para iniciar uma função
 
-![var example](image-1.png)
+![var example](/Kotlin/src/var_fun.png)
 
 * *String Templates*, são usadas para acessar variaveis e obejtos e converte-los em string:
 
-![function example](image-2.png)
+![function example](/Kotlin/src/StringTemplates.png)
 
 * *Null Safety*, segurança a nulidade, para poder usar um valor null usa-se ?
 <code> null: String? = "This string receive null"</code>
@@ -17,8 +17,15 @@
 
 > ##Class
 
-![class example](image-3.png)
+![class example](/Kotlin/src/class.png)
 
 > ##Generics
+* São informações genéricas, como o próprio nome diz, estipulando padrões de tipo a classe ou funções.
 
-![Generics Example](image-4.png)
+![Generics Example](/kotlin/src/Generics.png)
+![Generics Function Example](/Kotlin/src/GenericsFunction.png)
+
+> ##Inheritance
+* Classes podem herdar de suas classes atributos e métodos, como extensões de suas superclasses.
+
+![Inheritance Example](/Kotlin/src/Inheritance.png)
