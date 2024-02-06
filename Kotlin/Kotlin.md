@@ -17,12 +17,13 @@
 
 ##Class
 
-![class example](/Kotlin/src/class.png)
+![class example](/Kotlin/src/Class.png)
 
 ##Generics
 * São informações genéricas, como o próprio nome diz, estipulando padrões de tipo a classe ou funções.
 
 ![Generics Example](/kotlin/src/Generics.png)
+
 ![Generics Function Example](/Kotlin/src/GenericsFunction.png)
 
 ##Inheritance
